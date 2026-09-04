@@ -1,0 +1,54 @@
+/**
+ * @name Cathedral
+ * @author YourNameHere
+ * @version 1.0.0
+ * @description A dark gothic cathedral background theme for Discord.
+ * @source https://github.com/YourNameHere/cathedral-theme
+ */
+
+/* Cathedral background */
+body, #app-mount, [class*="bg_"] {
+  background-image: url('https://cdn.prod.website-files.com/65a1b21a5fcbab501a6f2d5c/67817f0626d91d0f653d15e1_9-p-500.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+
+/* ClearVision override */
+:root {
+  --background-overlay: rgba(0, 0, 0, 0) !important;
+  --background-shading: 0% !important;
+  --background-image: url('https://cdn.prod.website-files.com/65a1b21a5fcbab501a6f2d5c/67817f0626d91d0f653d15e1_9-p-500.webp') !important;
+  --background-primary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --background-tertiary: transparent !important;
+  --channeltextarea-background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Transparent panels */
+[class*="sidebar_"], [class*="privateChannels_"],
+[class*="chatContent_"], [class*="content_"],
+[class*="base_"], [class*="container_"],
+[class*="chat_"], [class*="chatLayer_"],
+[class*="scroller_"], [class*="scrollerInner_"],
+[class*="messagesWrapper_"], [class*="middle_"] {
+  background: transparent !important;
+}
+
+/* Transparent messages */
+[class*="message_"], [class*="cozyMessage_"],
+[class*="groupStart_"], [class*="wrapper_"],
+[class*="message_"]:hover, [class*="cozyMessage_"]:hover,
+[class*="wrapper_"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Text shadow for readability */
+[class*="message_"] *, [class*="sidebar_"] *,
+[class*="content_"] *, [class*="username_"] * {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9),
+               0px 0px 3px rgba(0, 0, 0, 1) !important;
+  color: white !important;
+}
